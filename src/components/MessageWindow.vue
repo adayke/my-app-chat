@@ -17,7 +17,7 @@
     >
       <div
         v-for="message in messages"
-        :key="message.timestamp.getTime()"
+        :key="message.id"
         :class="{
           'my-message': message?.fromId === myId,
           'other-message': message?.fromId !== myId,
